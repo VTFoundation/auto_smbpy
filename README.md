@@ -3,5 +3,5 @@
 ## Run ...
 
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/anantkaul/WinTricks/main/systemd-services/setup-smb-service.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/VTFoundation/auto_smbpy/main/setup-smb-service.sh)"
 ```
