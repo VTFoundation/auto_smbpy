@@ -1,0 +1,10 @@
+[Unit]
+Description=Another way of executing smbserver.py
+
+[Service]
+ExecStart=smbserver.py dropbox /opt/smb-files
+User=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
