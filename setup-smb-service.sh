@@ -7,10 +7,16 @@ echo
 echo \>\> Installing Python3 \& Pip3 ...
 echo
 sudo apt install python3 python3-pip -y
+sudo apt autoremove python3-impacket -y
 echo
-echo \>\> Installing Impacket \(smbserver.py\) with pip3 ...
+echo \>\> Installing Impacket \(smbserver.py\) ...
 echo
-sudo pip3 install impacket
+# sudo pip3 install impacket
+git clone https://github.com/SecureAuthCorp/impacket.git impacket
+cd impacket
+sudo pip3 install .
+cd ..
+sudo rm -rf impacket
 echo
 echo \>\> Setting up smbserver as systemd service ...
 if [ ! -d "/opt/smb-files" ] 
