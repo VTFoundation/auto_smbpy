@@ -1,6 +1,6 @@
 # auto_smbpy
 
-## Run ...
+## Run (Only for Ubuntu machines) ...
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/VTFoundation/auto_smbpy/main/setup-smb-service.sh)"
